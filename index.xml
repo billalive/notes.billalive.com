@@ -19,12 +19,25 @@
     <item>
       <title>pandoc: Make a List of URLs into an Ebook (EPUB)</title>
       <link>https://notes.billalive.com/posts/20220601210038-pandoc_make_a_list_of_urls_into_an_ebook_epub/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://notes.billalive.com/posts/20220601210038-pandoc_make_a_list_of_urls_into_an_ebook_epub/</guid>
       <description>Next time you start a series of blog posts that looks compelling, why not take a minute and save it as an ebook? It&amp;rsquo;s easy with pandoc.
 Example: The excellent Hypermodern Python series. I&amp;rsquo;ve read published Python books with far less substance. Also the, illustrations are gratuitously fantastic. So let&amp;rsquo;s write a quick script and save ourselves a copy:
 pandoc \ -M title:&amp;#34;Hypermodern Python&amp;#34; \ -M author:&amp;#34;Claudio Jolowicz&amp;#34; \ -o Hypermodern_Python_22601.</description>
+    </item>
+    
+    <item>
+      <title>AlphaSmart Neo2: Factory Reset</title>
+      <link>https://notes.billalive.com/posts/20220603133559-neo2_reset_to_factory_defaults/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.billalive.com/posts/20220603133559-neo2_reset_to_factory_defaults/</guid>
+      <description>If you get a strange error on your Neo2, e.g. &amp;ldquo;File overflow&amp;rdquo;, try a factory reset.
+WARNING: You&amp;rsquo;ll lose all your files.
+But your Neo2 will work again.
+ Turn off. Hold down Right Shift and Backspace Turn on. Enter password: tommy Confirm that you want to reset.  Done.
+When You Might Need to Reset I had to learn how to do this reset after I changed the watch battery on a Neo2 I&amp;rsquo;d just purchased.</description>
     </item>
     
   </channel>
