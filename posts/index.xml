@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Notes by Bill Alive</title>
+    <link>https://notes.billalive.com/posts/</link>
+    <description>Recent content in Posts on Notes by Bill Alive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://notes.billalive.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pandoc</title>
+      <link>https://notes.billalive.com/posts/20220604172854-pandoc/</link>
+      <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.billalive.com/posts/20220604172854-pandoc/</guid>
+      <description>A most excellent tool for transmogrifying text.</description>
+    </item>
+    
+    <item>
+      <title>pandoc: Make a List of URLs into an Ebook (EPUB)</title>
+      <link>https://notes.billalive.com/posts/20220601210038-pandoc_make_a_list_of_urls_into_an_ebook_epub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.billalive.com/posts/20220601210038-pandoc_make_a_list_of_urls_into_an_ebook_epub/</guid>
+      <description>Next time you start a series of blog posts that looks compelling, why not take a minute and save it as an ebook? It&amp;rsquo;s easy with pandoc.
+Example: The excellent Hypermodern Python series. I&amp;rsquo;ve read published Python books with far less substance. Also the, illustrations are gratuitously fantastic. So let&amp;rsquo;s write a quick script and save ourselves a copy:
+pandoc \ -M title:&amp;#34;Hypermodern Python&amp;#34; \ -M author:&amp;#34;Claudio Jolowicz&amp;#34; \ -o Hypermodern_Python_22601.</description>
+    </item>
+    
+  </channel>
+</rss>

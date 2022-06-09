@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Notes by Bill Alive</title>
+    <link>https://notes.billalive.com/categories/</link>
+    <description>Recent content in Categories on Notes by Bill Alive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://notes.billalive.com/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
