@@ -2,22 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://notes.billalive.com/posts/20220611094944-org_mode_keywords_vs_properties/</loc>
+    <lastmod>2022-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://notes.billalive.com/posts/20220611100633-org_roam/</loc>
+    <lastmod>2022-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://notes.billalive.com/posts/</loc>
+    <lastmod>2022-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://notes.billalive.com/posts/20220611094848-programming_org_mode/</loc>
+    <lastmod>2022-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://notes.billalive.com/posts/20220611100657-zettelkasten/</loc>
+    <lastmod>2022-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://notes.billalive.com/posts/20220606112022-org_mode/</loc>
+    <lastmod>2022-06-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://notes.billalive.com/</loc>
     <lastmod>2022-06-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://notes.billalive.com/posts/20220604172854-pandoc/</loc>
     <lastmod>2022-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://notes.billalive.com/posts/</loc>
-    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+    <loc>https://notes.billalive.com/posts/20220603133559-neo2_reset_to_factory_defaults/</loc>
+    <lastmod>2022-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://notes.billalive.com/posts/20220601210038-pandoc_make_a_list_of_urls_into_an_ebook_epub/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://notes.billalive.com/search/</loc>
     <priority>0</priority>
-  </url><url>
-    <loc>https://notes.billalive.com/posts/20220603133559-neo2_reset_to_factory_defaults/</loc>
   </url><url>
     <loc>https://notes.billalive.com/categories/</loc>
   </url><url>

@@ -6,7 +6,60 @@
     <description>Recent content in Posts on Notes by Bill Alive</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://notes.billalive.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://notes.billalive.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Org Mode Keywords vs. Properties</title>
+      <link>https://notes.billalive.com/posts/20220611094944-org_mode_keywords_vs_properties/</link>
+      <pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.billalive.com/posts/20220611094944-org_mode_keywords_vs_properties/</guid>
+      <description>Once you start Programming Org Mode, you&amp;rsquo;ll probably want to manipulate keywords and properties.
+They&amp;rsquo;re different, and you use different tools to work with them.
+This post I&amp;rsquo;ve just started already has both keywords and properties at the file level.
+Properties live in :PROPERTIES: The (sole) property is in the :PROPERTIES: drawer:
+:PROPERTIES: :ID: 16b7ded8-3eda-444e-a419-b57a6e9e23a1 :END: Get an Org Mode Property You can retrieve that property programmatically with, e.g.
+(plist-get (org-element--get-global-node-properties) :ID) RESULTS:</description>
+    </item>
+    
+    <item>
+      <title>Org-roam</title>
+      <link>https://notes.billalive.com/posts/20220611100633-org_roam/</link>
+      <pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.billalive.com/posts/20220611100633-org_roam/</guid>
+      <description>Turn Org Mode into a Zettelkasten.</description>
+    </item>
+    
+    <item>
+      <title>Programming Org Mode</title>
+      <link>https://notes.billalive.com/posts/20220611094848-programming_org_mode/</link>
+      <pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.billalive.com/posts/20220611094848-programming_org_mode/</guid>
+      <description>Ready to extend Org Mode?</description>
+    </item>
+    
+    <item>
+      <title>Zettelkasten</title>
+      <link>https://notes.billalive.com/posts/20220611100657-zettelkasten/</link>
+      <pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.billalive.com/posts/20220611100657-zettelkasten/</guid>
+      <description>Grow your knowledge in a network of reusable thoughts.</description>
+    </item>
+    
+    <item>
+      <title>Org Mode</title>
+      <link>https://notes.billalive.com/posts/20220606112022-org_mode/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.billalive.com/posts/20220606112022-org_mode/</guid>
+      <description>&amp;ldquo;Your life in plain text.&amp;rdquo;
+I spend more time in Org Mode than any other program. It&amp;rsquo;s starting to feel like my personal, extensible mech suit.
+https://orgmode.org/
+ Programming Org Mode  </description>
+    </item>
+    
     <item>
       <title>pandoc</title>
       <link>https://notes.billalive.com/posts/20220604172854-pandoc/</link>
@@ -14,6 +67,19 @@
       
       <guid>https://notes.billalive.com/posts/20220604172854-pandoc/</guid>
       <description>A most excellent tool for transmogrifying text.</description>
+    </item>
+    
+    <item>
+      <title>AlphaSmart Neo2: Factory Reset</title>
+      <link>https://notes.billalive.com/posts/20220603133559-neo2_reset_to_factory_defaults/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.billalive.com/posts/20220603133559-neo2_reset_to_factory_defaults/</guid>
+      <description>If you get a strange error on your Neo2, e.g. &amp;ldquo;File overflow&amp;rdquo;, try a factory reset.
+WARNING: You&amp;rsquo;ll lose all your files.
+But your Neo2 will work again.
+ Turn off. Hold down Right Shift and Backspace Turn on. Enter password: tommy Confirm that you want to reset.  Done.
+When You Might Need to Reset I had to learn how to do this reset after I changed the watch battery on a Neo2 I&amp;rsquo;d just purchased.</description>
     </item>
     
     <item>
@@ -25,19 +91,6 @@
       <description>Next time you start a series of blog posts that looks compelling, why not take a minute and save it as an ebook? It&amp;rsquo;s easy with pandoc.
 Example: The excellent Hypermodern Python series. I&amp;rsquo;ve read published Python books with far less substance. Also the, illustrations are gratuitously fantastic. So let&amp;rsquo;s write a quick script and save ourselves a copy:
 pandoc \ -M title:&amp;#34;Hypermodern Python&amp;#34; \ -M author:&amp;#34;Claudio Jolowicz&amp;#34; \ -o Hypermodern_Python_22601.</description>
-    </item>
-    
-    <item>
-      <title>AlphaSmart Neo2: Factory Reset</title>
-      <link>https://notes.billalive.com/posts/20220603133559-neo2_reset_to_factory_defaults/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://notes.billalive.com/posts/20220603133559-neo2_reset_to_factory_defaults/</guid>
-      <description>If you get a strange error on your Neo2, e.g. &amp;ldquo;File overflow&amp;rdquo;, try a factory reset.
-WARNING: You&amp;rsquo;ll lose all your files.
-But your Neo2 will work again.
- Turn off. Hold down Right Shift and Backspace Turn on. Enter password: tommy Confirm that you want to reset.  Done.
-When You Might Need to Reset I had to learn how to do this reset after I changed the watch battery on a Neo2 I&amp;rsquo;d just purchased.</description>
     </item>
     
   </channel>
