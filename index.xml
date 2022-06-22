@@ -8,6 +8,37 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://notes.billalive.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hubs</title>
+      <link>https://notes.billalive.com/posts/20220622091058-hubs/</link>
+      <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.billalive.com/posts/20220622091058-hubs/</guid>
+      <description>On this website, I use the word &amp;ldquo;hub&amp;rdquo; for a note that mainly exists as a topic for other notes to link to.
+Some hubs include:
+ Zettelkasten Org Mode pandoc  But I am more interested in the hubs that emerge on their own, as I link to them over time.</description>
+    </item>
+    
+    <item>
+      <title>The Simple Rules for this Zettelkasten</title>
+      <link>https://notes.billalive.com/posts/20220622090422-the_simple_rules_for_this_zettelkasten/</link>
+      <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.billalive.com/posts/20220622090422-the_simple_rules_for_this_zettelkasten/</guid>
+      <description>This website of notes is a Zettelkasten with two simple rules:
+ Each note should have one clear purpose. Each note should link to at least one other note.  These rules support each other. The more clear the purpose of each note is, the more likely that other notes will benefit from linking to it.
+After each note, you can its backlinks. This gives you an instant glimpse of which notes are emerging as hubs.</description>
+    </item>
+    
+    <item>
+      <title>This Website</title>
+      <link>https://notes.billalive.com/posts/20220622091144-this_website/</link>
+      <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.billalive.com/posts/20220622091144-this_website/</guid>
+      <description>A hub for notes about this website, notes.billalive.com.</description>
+    </item>
+    
+    <item>
       <title>Org Mode Keywords vs. Properties</title>
       <link>https://notes.billalive.com/posts/20220611094944-org_mode_keywords_vs_properties/</link>
       <pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate>
@@ -15,10 +46,9 @@
       <guid>https://notes.billalive.com/posts/20220611094944-org_mode_keywords_vs_properties/</guid>
       <description>Once you start Programming Org Mode, you&amp;rsquo;ll probably want to manipulate keywords and properties.
 They&amp;rsquo;re different, and you use different tools to work with them.
-This post I&amp;rsquo;ve just started already has both keywords and properties at the file level.
-Properties live in :PROPERTIES: The (sole) property is in the :PROPERTIES: drawer:
-:PROPERTIES: :ID: 16b7ded8-3eda-444e-a419-b57a6e9e23a1 :END: Get an Org Mode Property You can retrieve that property programmatically with, e.g.
-(plist-get (org-element--get-global-node-properties) :ID) RESULTS:</description>
+For example, this post I&amp;rsquo;ve just started already has both keywords and properties at the file level:
+:PROPERTIES: :ID: 16b7ded8-3eda-444e-a419-b57a6e9e23a1 :END: #+title: Org Mode Keywords vs. Properties #+date: 2022-06-11 #+hugo_draft: true Properties live in :PROPERTIES: The (sole) property is in the :PROPERTIES: drawer:
+:PROPERTIES: :ID: 16b7ded8-3eda-444e-a419-b57a6e9e23a1 :END: Get an Org Mode Property You can retrieve that property programmatically with, e.</description>
     </item>
     
     <item>
@@ -46,6 +76,16 @@ Properties live in :PROPERTIES: The (sole) property is in the :PROPERTIES: drawe
       
       <guid>https://notes.billalive.com/posts/20220611100657-zettelkasten/</guid>
       <description>Grow your knowledge in a network of reusable thoughts.</description>
+    </item>
+    
+    <item>
+      <title>Doom Emacs</title>
+      <link>https://notes.billalive.com/posts/20220606111516-doom_emacs/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.billalive.com/posts/20220606111516-doom_emacs/</guid>
+      <description>Make Emacs usable, with minimal pain.
+Source</description>
     </item>
     
     <item>

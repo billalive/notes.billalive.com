@@ -2,13 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://notes.billalive.com/posts/20220622091058-hubs/</loc>
+    <lastmod>2022-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://notes.billalive.com/posts/</loc>
+    <lastmod>2022-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://notes.billalive.com/posts/20220622090422-the_simple_rules_for_this_zettelkasten/</loc>
+    <lastmod>2022-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://notes.billalive.com/posts/20220622091144-this_website/</loc>
+    <lastmod>2022-06-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://notes.billalive.com/posts/20220611094944-org_mode_keywords_vs_properties/</loc>
     <lastmod>2022-06-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://notes.billalive.com/posts/20220611100633-org_roam/</loc>
-    <lastmod>2022-06-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://notes.billalive.com/posts/</loc>
     <lastmod>2022-06-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://notes.billalive.com/posts/20220611094848-programming_org_mode/</loc>
@@ -16,6 +25,9 @@
   </url><url>
     <loc>https://notes.billalive.com/posts/20220611100657-zettelkasten/</loc>
     <lastmod>2022-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://notes.billalive.com/posts/20220606111516-doom_emacs/</loc>
+    <lastmod>2022-06-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://notes.billalive.com/posts/20220606112022-org_mode/</loc>
     <lastmod>2022-06-06T00:00:00+00:00</lastmod>

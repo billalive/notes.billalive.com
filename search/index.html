@@ -38,11 +38,51 @@ window.store = {
     
     
     
+    "https:\/\/notes.billalive.com\/posts\/20220622091058-hubs\/": {
+        
+        "title": "Hubs",
+        "tags": [],
+        "content": "On this website, I use the word \u0026ldquo;hub\u0026rdquo; for a note that mainly exists as a topic for other notes to link to.\nSome hubs include:\n Zettelkasten Org Mode pandoc  But I am more interested in the hubs that emerge on their own, as I link to them over time.\n", 
+        "url": "https:\/\/notes.billalive.com\/posts\/20220622091058-hubs\/"
+    },
+    
+    
+    
+    "https:\/\/notes.billalive.com\/posts\/": {
+        
+        "title": "Posts",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/notes.billalive.com\/posts\/"
+    },
+    
+    
+    
+    "https:\/\/notes.billalive.com\/posts\/20220622090422-the_simple_rules_for_this_zettelkasten\/": {
+        
+        "title": "The Simple Rules for this Zettelkasten",
+        "tags": [],
+        "content": "This website of notes is a Zettelkasten with two simple rules:\n Each note should have one clear purpose. Each note should link to at least one other note.  These rules support each other. The more clear the purpose of each note is, the more likely that other notes will benefit from linking to it.\nAfter each note, you can its backlinks. This gives you an instant glimpse of which notes are emerging as hubs.\n", 
+        "url": "https:\/\/notes.billalive.com\/posts\/20220622090422-the_simple_rules_for_this_zettelkasten\/"
+    },
+    
+    
+    
+    "https:\/\/notes.billalive.com\/posts\/20220622091144-this_website\/": {
+        
+        "title": "This Website",
+        "tags": [],
+        "content": "A hub for notes about this website, notes.billalive.com.\n", 
+        "url": "https:\/\/notes.billalive.com\/posts\/20220622091144-this_website\/"
+    },
+    
+    
+    
     "https:\/\/notes.billalive.com\/posts\/20220611094944-org_mode_keywords_vs_properties\/": {
         
         "title": "Org Mode Keywords vs. Properties",
         "tags": [],
-        "content": "Once you start Programming Org Mode, you\u0026rsquo;ll probably want to manipulate keywords and properties.\nThey\u0026rsquo;re different, and you use different tools to work with them.\nThis post I\u0026rsquo;ve just started already has both keywords and properties at the file level.\nProperties live in :PROPERTIES: The (sole) property is in the :PROPERTIES: drawer:\n:PROPERTIES: :ID: 16b7ded8-3eda-444e-a419-b57a6e9e23a1 :END: Get an Org Mode Property You can retrieve that property programmatically with, e.g.\n(plist-get (org-element--get-global-node-properties) :ID) RESULTS:\n16b7ded8-3eda-444e-a419-b57a6e9e23a1 Note that we access the property with :ID, not \u0026quot;ID\u0026quot;.\nAlso note that, because I knew I wanted the properties for the entire file, I used org-element--get-global-node-properties.\nIf I instead wanted the properties for the closest heading to the Emacs point, I would use org-element--get-node-properties.\nSet an Org Mode Property You can set the property programmatically with:\n(org-set-property \u0026#34;ID\u0026#34; \u0026#34;random-id-oops\u0026#34;) This time, we access the property with \u0026quot;ID\u0026quot;, as you might expect.\nIMPORTANT You\u0026rsquo;ll need to have the Emacs point in the right place, because org-set-property acts on the closest entry. In fact, when I ran that code just now, it set the ID of the local heading (\u0026ldquo;Set an Org Mode Property\u0026rdquo;).\n(I could not find anything like org-set-global-property). If you can, let me know.)\nMoving the point to edit the property feels slightly brittle to me, so for a file-level value, we might want to use a keyword instead.\nKeywords start with #+ My new file\u0026rsquo;s keywords look like this:\n#+title: Org Mode Keywords vs. Properties #+date: 2022-06-11 #+hugo_draft: true Get an Org Mode Keyword I\u0026rsquo;m using ox-hugo to publish this post, so the draft status is set with the keyword:\n#+hugo_draft: true I can programmatically get the value of this keyword with:\n(org-collect-keywords \u0026#39;(\u0026#34;HUGO_DRAFT\u0026#34;)) RESULTS:\n         HUGO_DRAFT true    Since I\u0026rsquo;m not ready to publish this post yet, the draft status is true.\nNote that keywords should be capitalized here, even if they aren\u0026rsquo;t in your actual text.\nAlso note the extra parentheses and apostrophe. You could (probably) collect multiple keywords at a time, should you desire.\nCan individual headings have keywords? YES. I didn\u0026rsquo;t expect this, because I\u0026rsquo;ve never seen it, but watch what happens if I add a hugo_draft keyword to this heading.\nTest heading with keyword You can\u0026rsquo;t see it, but this heading has this keyword:\n#+hugo_draft: oops Let\u0026rsquo;s get the keyword(s) again:\n(org-collect-keywords \u0026#39;(\u0026#34;HUGO_DRAFT\u0026#34;)) RESULTS:\n          HUGO_DRAFT false oops    Note that we have both keywords. If these were properties, the heading would override the file. For example, each heading can have its own ID property.\nBut I wouldn\u0026rsquo;t use keywords on headings I\u0026rsquo;ve never seen keywords anywhere but at the file level.\nThere must be a good use for this\u0026hellip; or not?\nSet an Org Mode Keyword I\u0026rsquo;m about ready to publish this post. Let\u0026rsquo;s set the draft status to false.\n(org-roam-set-keyword \u0026#34;HUGO_DRAFT\u0026#34; \u0026#34;false\u0026#34;) It worked! My keyword at the top now shows:\n#+hugo_draft: false And it did not change the second hugo_draft that I added as a test under \u0026ldquo;Test heading with keyword.\u0026rdquo;\nIMPORTANT this function doesn\u0026rsquo;t come with Org Mode; it\u0026rsquo;s provided by Org-roam. There\u0026rsquo;s probably a vanilla way to do this.\nShould you use a property or a keyword? I assume there are well-thought-out reasons for choosing one or the other.\nAt first glance, the obvious differences are:\n Properties  Invisible.  Tucked away in the PROPERTIES drawer.   Both the file and individual headings usually have them. Lowest level property takes precedence, and replaces all other values for the property.   Keywords  Visible.  Sometimes you want that, e.g. the draft status of a post.   I usually see them only at the file level.  You can also add them to headings. But I\u0026rsquo;m not sure how to set them at the heading level, only at the file level.   No precedence(?): If you reuse the keyword, the values accumulate.    Since a draft status should only be true or false, maybe a property would be more appropriate. But it\u0026rsquo;s important enough to me to see this status at a glance that I will stick to using a single, file-level keyword.\nI hope this helps! This feels like the kind of basic distinction that can be hard to find an explanation for.\n", 
+        "content": "Once you start Programming Org Mode, you\u0026rsquo;ll probably want to manipulate keywords and properties.\nThey\u0026rsquo;re different, and you use different tools to work with them.\nFor example, this post I\u0026rsquo;ve just started already has both keywords and properties at the file level:\n:PROPERTIES: :ID: 16b7ded8-3eda-444e-a419-b57a6e9e23a1 :END: #+title: Org Mode Keywords vs. Properties #+date: 2022-06-11 #+hugo_draft: true Properties live in :PROPERTIES: The (sole) property is in the :PROPERTIES: drawer:\n:PROPERTIES: :ID: 16b7ded8-3eda-444e-a419-b57a6e9e23a1 :END: Get an Org Mode Property You can retrieve that property programmatically with, e.g.\n(plist-get (org-element--get-global-node-properties) :ID) RESULTS:\n16b7ded8-3eda-444e-a419-b57a6e9e23a1 Note that we access the property with :ID, not \u0026quot;ID\u0026quot;.\nAlso note that, because I knew I wanted the properties for the entire file, I used org-element--get-global-node-properties.\nIf I instead wanted the properties for the closest heading to the Emacs point, I would use org-element--get-node-properties.\nSet an Org Mode Property You can set the property programmatically with:\n(org-set-property \u0026#34;ID\u0026#34; \u0026#34;random-id-oops\u0026#34;) This time, we access the property with \u0026quot;ID\u0026quot;, as you might expect.\nIMPORTANT You\u0026rsquo;ll need to have the Emacs point in the right place, because org-set-property acts on the closest entry. In fact, when I ran that code just now, it set the ID of the local heading (\u0026ldquo;Set an Org Mode Property\u0026rdquo;).\n(I could not find anything like org-set-global-property). If you can, let me know.)\nMoving the point to edit the property feels slightly brittle to me, so for a file-level value, we might want to use a keyword instead.\nKeywords start with #+ My new file\u0026rsquo;s keywords look like this:\n#+title: Org Mode Keywords vs. Properties #+date: 2022-06-11 #+hugo_draft: true Get an Org Mode Keyword I\u0026rsquo;m using ox-hugo to publish this post, so the draft status is set with the keyword:\n#+hugo_draft: true I can programmatically get the value of this keyword with:\n(org-collect-keywords \u0026#39;(\u0026#34;HUGO_DRAFT\u0026#34;)) RESULTS:\n         HUGO_DRAFT true    Since I\u0026rsquo;m not ready to publish this post yet, the draft status is true.\nNote that keywords should be capitalized here, even if they aren\u0026rsquo;t in your actual text.\nAlso note the extra parentheses and apostrophe. You could (probably) collect multiple keywords at a time, should you desire.\nCan individual headings have keywords? YES. I didn\u0026rsquo;t expect this, because I\u0026rsquo;ve never seen it, but watch what happens if I add a hugo_draft keyword to this heading.\nTest heading with keyword You can\u0026rsquo;t see it, but this heading has this keyword:\n#+hugo_draft: oops Let\u0026rsquo;s get the keyword(s) again:\n(org-collect-keywords \u0026#39;(\u0026#34;HUGO_DRAFT\u0026#34;)) RESULTS:\n          HUGO_DRAFT false oops    Note that we have both keywords. If these were properties, the heading would override the file. For example, each heading can have its own ID property.\nBut I wouldn\u0026rsquo;t use keywords on headings I\u0026rsquo;ve never seen keywords anywhere but at the file level.\nThere must be a good use for this\u0026hellip; or not?\nSet an Org Mode Keyword I\u0026rsquo;m about ready to publish this post. Let\u0026rsquo;s set the draft status to false.\n(org-roam-set-keyword \u0026#34;HUGO_DRAFT\u0026#34; \u0026#34;false\u0026#34;) It worked! My keyword at the top now shows:\n#+hugo_draft: false And it did not change the second hugo_draft that I added as a test under \u0026ldquo;Test heading with keyword.\u0026rdquo;\nIMPORTANT this function doesn\u0026rsquo;t come with Org Mode; it\u0026rsquo;s provided by Org-roam. There\u0026rsquo;s probably a vanilla way to do this.\nShould you use a property or a keyword? I assume there are well-thought-out reasons for choosing one or the other.\nAt first glance, the obvious differences are:\n Properties  Invisible.  Tucked away in the PROPERTIES drawer.   Both the file and individual headings usually have them. Lowest level property takes precedence, and replaces all other values for the property.   Keywords  Visible.  Sometimes you want that, e.g. the draft status of a post.   I usually see them only at the file level.  You can also add them to headings. But I\u0026rsquo;m not sure how to set them at the heading level, only at the file level.   No precedence(?): If you reuse the keyword, the values accumulate.    Since a draft status should only be true or false, maybe a property would be more appropriate. But it\u0026rsquo;s important enough to me to see this status at a glance that I will stick to using a single, file-level keyword.\nI hope this helps! This feels like the kind of basic distinction that can be hard to find an explanation for.\n", 
         "url": "https:\/\/notes.billalive.com\/posts\/20220611094944-org_mode_keywords_vs_properties\/"
     },
     
@@ -54,16 +94,6 @@ window.store = {
         "tags": [],
         "content": "Turn Org Mode into a Zettelkasten.\n", 
         "url": "https:\/\/notes.billalive.com\/posts\/20220611100633-org_roam\/"
-    },
-    
-    
-    
-    "https:\/\/notes.billalive.com\/posts\/": {
-        
-        "title": "Posts",
-        "tags": [],
-        "content": "", 
-        "url": "https:\/\/notes.billalive.com\/posts\/"
     },
     
     
@@ -84,6 +114,16 @@ window.store = {
         "tags": [],
         "content": "Grow your knowledge in a network of reusable thoughts.\n", 
         "url": "https:\/\/notes.billalive.com\/posts\/20220611100657-zettelkasten\/"
+    },
+    
+    
+    
+    "https:\/\/notes.billalive.com\/posts\/20220606111516-doom_emacs\/": {
+        
+        "title": "Doom Emacs",
+        "tags": [],
+        "content": "Make Emacs usable, with minimal pain.\nSource\n", 
+        "url": "https:\/\/notes.billalive.com\/posts\/20220606111516-doom_emacs\/"
     },
     
     
